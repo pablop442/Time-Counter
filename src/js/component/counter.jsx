@@ -51,14 +51,14 @@ Counter.propTypes = {
 
 //Set count variable to zero to change it on each interval
 let count = 0;
-// Declaring one variable per digit and increments count every second (1000 miliseconds)
+// Declaring one variable per digit and incrementing count every second (1000 miliseconds)
 function timeCycle() {
 	setInterval(() => {
 		let four = Math.floor(count / 1000);
 		let three = Math.floor(count / 100);
 		let two = Math.floor(count / 10);
 		let one = Math.floor(count / 1);
-		console.log(four, three, two, one);
+		// console.log(four, three, two, one);
 		count++;
 		<Counter numOne={one} numTwo={two} numThree={three} numFour={four} />;
 	}, 1000);
