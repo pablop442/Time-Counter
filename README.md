@@ -6,7 +6,7 @@
 - It is an exercise made for academic purposes as a part of 4Geeks Academy coding bootcamp.
 - Feel free to contribute. 
 
-##How to run it
+## How to run it
 - You can clone this repository: 
 ```
 $ git clone https://github.com/pablop442/Street-Light
