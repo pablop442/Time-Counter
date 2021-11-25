@@ -1,14 +1,21 @@
-//Import React
+//Import React and propTypes
 import React from "react";
-import Counter from "./counter.jsx";
-import Buttons from "./buttons.jsx";
+import PropTypes from "prop-types";
 
-const Home = () => {
+//Import components
+import Counter from "./counter.jsx";
+
+const Home = props => {
 	return (
 		<div>
-			<Counter />
+			<Counter count={props.count} />
 		</div>
 	);
+};
+
+//Proptype declaration
+Home.propTypes = {
+	count: PropTypes.number
 };
 
 export default Home;
